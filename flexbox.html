@@ -1,0 +1,63 @@
+<div id="primaryScene" class="scene">
+    <div class="hbox" id="hbox0" style="flex-grow: 1.2;">
+        <div class="viewWrapper" id="view0" style="flex-grow: 0.4;">
+            <canvas class="canvasView"></canvas>
+            <aside class="sideContent"></aside>
+        </div>
+        <div class="viewWrapper" id="view1" style="flex-grow: 1.6;">
+            <canvas class="canvasView"></canvas>
+            <aside class="sideContent"></aside>
+        </div>
+    </div>
+    <div class="hbox" id="hbox1" style="flex-grow: 0.8;">
+        <div class="viewWrapper" id="view2">
+            <canvas class="canvasView"></canvas>
+            <aside class="sideContent"></aside>
+        </div>
+        <div class="viewWrapper" id="view3">
+            <canvas class="canvasView"></canvas>
+            <aside class="sideContent"></aside>
+        </div>
+    </div>
+</div>
+
+
+
+<script>
+.scene {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: column;
+    flex-flow: column;
+    overflow: hidden;
+}
+
+.hbox {
+    min-height: 0;
+    -webkit-flex: 1 1 0%;
+    flex: 1 1 0%;
+    display: -webkit-flex;
+    display: flex;
+    position: relative;
+}
+.viewWrapper {
+    min-height: 0;
+    -webkit-flex: 1 1 0%;
+    flex: 1 1 0%;
+    position: relative;
+    margin: 0 2px 2px 0;
+}
+
+.canvasView {
+    display: block;
+}
+
+.canvasView {
+    position: absolute;
+}
+
+.sideContent{
+    max-width: 120px;
+    overflow-x: hidden;
+    overflow-y: auto;
+</script>
